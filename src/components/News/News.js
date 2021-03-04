@@ -20,7 +20,7 @@ const useStyles = makeStyles({
 
 const News = (props) => {
     console.log(props.article);
-    const{title, description, urlToImage, author} = props.article;
+    const{title, description, urlToImage} = props.article;
     const classes = useStyles();
     return (
         <Card className={classes.root}>
@@ -32,7 +32,7 @@ const News = (props) => {
                 />
                 <CardContent>
                 <Typography gutterBottom variant="h5" component="h2">
-                    {author}
+                    {title}
                 </Typography>
                 <Typography variant="body2" color="textSecondary" component="p">
                     {description}
